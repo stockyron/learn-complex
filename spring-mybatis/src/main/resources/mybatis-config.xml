@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <settings>
+        <setting name="cacheEnabled" value="false"/>
+        <setting name="useGeneratedKeys" value="true"/>
+        <setting name="defaultExecutorType" value="REUSE"/>
+    </settings>
+    <typeAliases>
+        <typeAlias type="com.rg.mybatis.com.rg.transaction.User" alias="com.rg.transaction.User"/>
+    </typeAliases>
+    <!-- 独立测试使用Mybatis需要 -->
+    <!--<environments default="development">
+        <environment id="development">
+            <transactionManager type="jdbc"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://43.249.207.35:38573/shiyi_customer_new"/>
+                <property name="username" value="MU9V9I5I4M0"/>
+                <property name="password" value="VWFNCO9OD82"/>
+            </dataSource>
+        </environment>
+    </environments>-->
+
+    <mappers>
+        <mapper resource="mappers/UserMapper.xml"/>
+    </mappers>
+
+
+</configuration>
