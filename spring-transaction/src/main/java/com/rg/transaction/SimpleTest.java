@@ -1,5 +1,6 @@
 package com.rg.transaction;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -15,6 +16,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  *  *    
  *  
  */
+@Slf4j
 public class SimpleTest {
 
     public static void main(String[] args) throws Exception {
@@ -25,6 +27,7 @@ public class SimpleTest {
         user.setAge(29);
         user.setSex("男");
         userService.save(user);
+
 
     }
 
