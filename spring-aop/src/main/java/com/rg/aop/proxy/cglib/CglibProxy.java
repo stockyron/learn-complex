@@ -1,5 +1,6 @@
 package com.rg.aop.proxy.cglib;
 
+import lombok.extern.slf4j.Slf4j;
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
@@ -18,6 +19,7 @@ import java.lang.reflect.Method;
  *  *    
  *  
  */
+@Slf4j
 public class CglibProxy implements MethodInterceptor {
 
     public Object newInstall(Object object) {
